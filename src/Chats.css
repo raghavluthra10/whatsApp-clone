@@ -2,6 +2,7 @@
     flex: 0.65;
     display: flex;
     flex-direction: column;
+    
 }
 
 .chat__header {
@@ -9,6 +10,18 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    
+}
+
+@media screen and (max-width: 670) {
+    .chat__headerInfo{
+        padding-left: 10px;
+    }
+
+    .chat__headerRight {
+        min-width: fit-content;
+    }
+    
 }
 
 .chat__headerInfo {

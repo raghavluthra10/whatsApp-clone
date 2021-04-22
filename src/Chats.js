@@ -9,6 +9,7 @@ import { useParams } from "react-router-dom";
 import db from './firebase';
 import { useStateValue } from './StateProvider';
 import firebase from 'firebase';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const Chats = () => {
     const [ input, setInput ] = useState('');
@@ -52,6 +53,17 @@ const Chats = () => {
         }
     }
 
+    // const deleteChat = (e) => {
+    //     e.preventDefault();
+
+    //     // db.collection('rooms').delete().then(() => {
+    //     //     console.log('deleted successfully')
+    //     // }). catch((error) => {
+    //     //     alert('error')
+    //     // })
+    // }
+
+
     return (
         <div className='chats'>
             <div className='chat__header' >
@@ -74,7 +86,7 @@ const Chats = () => {
                         
 
                     <IconButton>
-                        <MoreVertIcon  />
+                        <DeleteIcon   />
                     </IconButton>
                 </div>
             </div>
