@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './SidebarChat.css';
 import db from './firebase';
 import { Link } from 'react-router-dom';
+import { Modal } from '@daypilot/modal';
 
 const SidebarChat = ({ id, name, addNewChat }) => {
 

@@ -39,14 +39,17 @@ const Chats = () => {
 
     const sendMessage = e => {
         e.preventDefault();
-
-        db.collection('rooms').doc(roomId).collection
-        ('messages').add({
-            message: input,
-            name: user.displayName,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-        })
-        setInput('');
+        if(input === '') {
+            alert('please enter a message')
+        } else {
+            db.collection('rooms').doc(roomId).collection
+            ('messages').add({
+                message: input,
+                name: user.displayName,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            })
+            setInput('');
+        }
     }
 
     return (
