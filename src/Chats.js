@@ -53,16 +53,6 @@ const Chats = () => {
         }
     }
 
-    // const deleteChat = (e) => {
-    //     e.preventDefault();
-
-    //     // db.collection('rooms').delete().then(() => {
-    //     //     console.log('deleted successfully')
-    //     // }). catch((error) => {
-    //     //     alert('error')
-    //     // })
-    // }
-
 
     return (
         <div className='chats'>

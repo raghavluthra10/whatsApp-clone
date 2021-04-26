@@ -21,6 +21,10 @@
     .chat__headerRight {
         min-width: fit-content;
     }
+
+    .chat__header {
+        width: fit-content;
+    }
     
 }
 
@@ -45,7 +49,8 @@
 }
 
 .chat__body {
-    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    background-color: rgb(16, 21, 43);
+    /* background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/w0245_1s_Art-Deco-Hexagonal-Pattern-Wallpaper-for-Walls-F.-Scott-Fitzgerald_Repeating-Pattern-Sample-1.jpg?v=1604085912'); */
     flex: 1;
     background-repeat: repeat;
     background-position: center;
