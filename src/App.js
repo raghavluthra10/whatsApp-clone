@@ -21,13 +21,12 @@ function App() {
           <Sidebar  />
             <Switch>
               <Route path='/rooms/:roomId'> 
-              <Chats  /> 
+                <Chats  /> 
               </Route>
               <Route exact path='/'> 
-              <Chats  /> 
+                <Chats  /> 
               </Route>
             </Switch>
-            
           </Router>
         </div>
       )}       

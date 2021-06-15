@@ -49,8 +49,8 @@
 }
 
 .chat__body {
-    background-color: rgb(16, 21, 43);
-    /* background-image: url('https://cdn.shopify.com/s/files/1/0285/1316/products/w0245_1s_Art-Deco-Hexagonal-Pattern-Wallpaper-for-Walls-F.-Scott-Fitzgerald_Repeating-Pattern-Sample-1.jpg?v=1604085912'); */
+    /* background-color: rgb(161, 161, 161); */
+    background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--WAKqnINn--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/tw0nawnvo0zpgm5nx4fp.png');
     flex: 1;
     background-repeat: repeat;
     background-position: center;

@@ -23,6 +23,7 @@ const Chats = () => {
         if(roomId) {
             db.collection('rooms').doc(roomId).onSnapshot((snapShot) => (
                 setRoomName(snapShot.data().name)
+                
             ))
 
             db.collection('rooms').doc(roomId).collection('messages')
@@ -40,6 +41,7 @@ const Chats = () => {
 
     const sendMessage = e => {
         e.preventDefault();
+        
         if(input === '') {
             alert('please enter a message')
         } else {
@@ -52,6 +54,8 @@ const Chats = () => {
             setInput('');
         }
     }
+
+    
 
 
     return (
@@ -75,7 +79,7 @@ const Chats = () => {
                     </IconButton>
                         
 
-                    <IconButton>
+                    <IconButton >
                         <DeleteIcon   />
                     </IconButton>
                 </div>
